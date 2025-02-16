@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Luckiest+Guy&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+  <video muted autoplay loop src="assets/bg.mp4"></video>
+
+  <!-- music -->
+  <audio id="background-music" autoplay loop>
+    <source src="sound/music.wav" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- <audio id="backgroundMusic" src="sound/game-start.mp3" loop></audio> -->
+
+
+
+  <div id="menu">
+    <img src="assets/tittle.png" alt="">
+    <div class="menu-buttons">
+      <div id="startGameButton" class="menu-btn play"> </div>
+      <div class="menu-btn about"></div>
+      <div class="menu-btn score"></div>
+    </div>
+  </div>
+
+
+  <div id="game">
+    <div id="player">
+    </div>
+    <div id="enemy"></div>
+  </div>
+
+  <div id="gameover" class="popup">
+    <div class="popimg" id="popimg">
+    <a href="index.html">Retry</a>
+    </div>
+  </div>
+
+  <div class="control">
+    <div id="up-btn" class="control-btn"><p>up</p></div>
+    <div id="down-btn" class="control-btn"><p>down</p></div>
+    <div id="attack-btn" class="control-btn"><p>space</p></div>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
